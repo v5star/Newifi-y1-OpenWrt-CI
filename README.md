@@ -14,7 +14,7 @@ Build OpenWrt using GitHub Actions
 这三个至少有一个等于true。
 
 - newifi-y1.sh  固件的一些默认配置和插件的原地址或依赖地址；
-- newifi.config   定制自己需要插件或功能的开启。
+- newifi.config   定制自己需要插件或功能的开启。内容可以从 simple.config  这个文件里摘出来，如：需要启动磁盘管理，需要把 CONFIG_PACKAGE_luci-app-diskman  is not set  改为CONFIG_PACKAGE_luci-app-diskman=y
 
 下面这三个是根据硬件设备来选择的，自己百度你的设备型号。
 - CONFIG_TARGET_ramips=y
