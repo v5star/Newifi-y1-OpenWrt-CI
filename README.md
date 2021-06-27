@@ -5,7 +5,7 @@ Build OpenWrt using GitHub Actions
 经测试编译成功。
 去掉上传到奶牛等网络空间，直接把编译文件显示在Actions任务下面。（这个可以上传到Releases下）。
 
-具体修改/.github/workflows/build-openwrt-newifi-y1.yml
+具体修改`/.github/workflows/build-openwrt-newifi-y1.yml`
 
 - UPLOAD_BIN_DIR: false   ---- 上传bin文件 true：上传，false：不上传；
 - UPLOAD_FIRMWARE: true   ---- 上传固件 true：上传，false：不上传；
@@ -14,7 +14,7 @@ Build OpenWrt using GitHub Actions
 这三个至少有一个等于true。
 
 - newifi-y1.sh  固件的一些默认配置和插件的原地址或依赖地址；
-- newifi.config   定制自己需要插件或功能的开启。内容可以从 simple.config  这个文件里摘出来，如：需要启动磁盘管理，需要把 CONFIG_PACKAGE_luci-app-diskman  is not set  改为CONFIG_PACKAGE_luci-app-diskman=y
+- newifi.config   定制自己需要插件或功能的开启。内容可以从 `simple.config`  这个文件里摘出来，如：需要启动磁盘管理，需要把 `CONFIG_PACKAGE_luci-app-diskman  is not set`  改为`CONFIG_PACKAGE_luci-app-diskman=y`
 
 下面这三个是根据硬件设备来选择的，自己百度你的设备型号。
 - CONFIG_TARGET_ramips=y
