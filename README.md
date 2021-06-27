@@ -15,6 +15,11 @@ UPLOAD_FIRMWARE: true   ---- 上传固件 true：上传，false：不上传；
 
 UPLOAD_RELEASE: false   ---- 上传Releas true：上传，false：不上传；
 
+newifi-y1.sh  固件的一些默认配置和插件的原地址或依赖地址；
+
+newifi.config   定制自己需要插件或功能的开启。
+
+
 ## Usage
 
 - Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
