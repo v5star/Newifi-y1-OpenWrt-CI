@@ -14,14 +14,19 @@ Build OpenWrt using GitHub Actions
 这三个至少有一个等于true。
 
 - newifi-y1.sh  固件的一些默认配置和插件的原地址或依赖地址；
-- newifi.config   定制自己需要插件或功能的开启。内容可以从 `simple.config`  这个文件里摘出来，如：需要启动磁盘管理，需要把 `CONFIG_PACKAGE_luci-app-diskman  is not set`  改为`CONFIG_PACKAGE_luci-app-diskman=y`
+- newifi.config   定制自己需要插件或功能的开启。内容可以从 `simple.config`  这个文件里摘出来，如：需要启动磁盘管理，需要把 `CONFIG_PACKAGE_luci-app-diskman  is not set`  改为`CONFIG_PACKAGE_luci-app-diskman=y`  
 
 下面这三个是根据硬件设备来选择的，自己百度你的设备型号。
 - CONFIG_TARGET_ramips=y
 - CONFIG_TARGET_ramips_mt7620=y
 - CONFIG_TARGET_ramips_mt7620_DEVICE_lenovo_newifi-y1=y
-
-
+ 
+# LcCI 功能配置说明
+- `Y` 包含此插件
+- `M` 编译为ipk包 即：模块
+- `N` 不包含此插件
+如：`luci-app-diskman` 这个磁盘管理插件，如果需要编译到固件里则为：`CONFIG_PACKAGE_luci-app-diskman=y` ，如果编译成模块另外独立安装则为：`CONFIG_PACKAGE_luci-app-diskman=m`,如果不需要此模块则在此模块行前面加#号或者在配置文件里不出现此行记录即删除即可。
+ 
 ## Usage
 
 - Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
