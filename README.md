@@ -1,7 +1,5 @@
 # Actions-OpenWrt
 
-我Fork别人的，正在测试中，自己定制自己用到的插件，有想自己弄的，可以一起研究。
-
 Build OpenWrt using GitHub Actions
 
 经测试编译成功。
@@ -9,17 +7,14 @@ Build OpenWrt using GitHub Actions
 
 具体修改/.github/workflows/build-openwrt-newifi-y1.yml
 
-UPLOAD_BIN_DIR: false   ---- 上传bin文件 true：上传，false：不上传；
-
-UPLOAD_FIRMWARE: true   ---- 上传固件 true：上传，false：不上传；
-
-UPLOAD_RELEASE: false   ---- 上传Releas true：上传，false：不上传；
+- UPLOAD_BIN_DIR: false   ---- 上传bin文件 true：上传，false：不上传；
+- UPLOAD_FIRMWARE: true   ---- 上传固件 true：上传，false：不上传；
+- UPLOAD_RELEASE: false   ---- 上传Releas true：上传，false：不上传；
 
 这三个至少有一个等于true。
 
-newifi-y1.sh  固件的一些默认配置和插件的原地址或依赖地址；
-
-newifi.config   定制自己需要插件或功能的开启。
+- newifi-y1.sh  固件的一些默认配置和插件的原地址或依赖地址；
+- newifi.config   定制自己需要插件或功能的开启。
 
 下面这三个是根据硬件设备来选择的，自己百度你的设备型号。
 - CONFIG_TARGET_ramips=y
