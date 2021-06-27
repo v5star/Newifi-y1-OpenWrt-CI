@@ -4,8 +4,16 @@
 
 Build OpenWrt using GitHub Actions
 
-成功后再来写教程，补坑。
+经测试编译成功。
+去掉上传到奶牛等网络空间，直接把编译文件显示在Actions任务下面。（这个可以上传到Releases下）。
 
+具体修改/.github/workflows/build-openwrt-newifi-y1.yml
+
+  UPLOAD_BIN_DIR: false   ---- 上传bin文件
+  UPLOAD_FIRMWARE: true   ---- 上传固件
+  UPLOAD_RELEASE: false   ---- 上传Releas
+  
+  
 ## Usage
 
 - Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
