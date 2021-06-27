@@ -10,8 +10,8 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-pass
 # 修改菜单名称（试验）
 sed -i 's/"管理权"/"改密码"/g' feeds/luci/modules/luci-base/po/zh-cn/base.po
 
-# 修改默认IP
-sed -i 's/192.168.2.1/192.168.2.253/g' package/base-files/files/bin/config_generate
+# 修改默认IP为192.168.3.1
+sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generate
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
