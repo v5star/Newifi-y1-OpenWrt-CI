@@ -9,11 +9,11 @@ Build OpenWrt using GitHub Actions
 
 具体修改/.github/workflows/build-openwrt-newifi-y1.yml
 
-UPLOAD_BIN_DIR: false   ---- 上传bin文件
+UPLOAD_BIN_DIR: false   ---- 上传bin文件 true：上传，false：不上传；
 
-UPLOAD_FIRMWARE: true   ---- 上传固件
+UPLOAD_FIRMWARE: true   ---- 上传固件 true：上传，false：不上传；
 
-UPLOAD_RELEASE: false   ---- 上传Releas
+UPLOAD_RELEASE: false   ---- 上传Releas true：上传，false：不上传；
 
 ## Usage
 
