@@ -125,7 +125,7 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M"-'newifi-y')"
+        echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M"-'lenovo_newifi-y1')"
         touch release.txt       
         echo "::set-output name=status::success"
 
