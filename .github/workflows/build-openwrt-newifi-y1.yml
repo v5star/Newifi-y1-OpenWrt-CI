@@ -1,7 +1,6 @@
 #
 # This is free software, licensed under the MIT License.
-# See /LICENSE for more information.
-#
+# OpenWRT源 coolsnowwolf/lede
 # Description: Build OpenWrt using GitHub Actions
 #
 
@@ -23,8 +22,8 @@ env:
   CONFIG_FILE: newifi.config
   DIY_P1_SH: newifi-y1.sh
   
-  UPLOAD_BIN_DIR: false
-  UPLOAD_FIRMWARE: false
+  UPLOAD_BIN_DIR: true
+  UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
