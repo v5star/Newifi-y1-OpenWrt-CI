@@ -22,8 +22,8 @@ env:
   CONFIG_FILE: newifi-y/.config
   DIY_P1_SH: newifi-y/script.sh
   
-  UPLOAD_BIN_DIR: true
-  UPLOAD_FIRMWARE: false
+  UPLOAD_BIN_DIR: false
+  UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
