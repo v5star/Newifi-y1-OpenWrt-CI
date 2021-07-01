@@ -2,9 +2,7 @@
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
 #使用源码自带ShadowSocksR Plus+出国软件
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
+#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # 修改菜单名称（试验）
 sed -i 's/"管理权"/"改密码"/g' feeds/luci/modules/luci-base/po/zh-cn/base.po
@@ -17,8 +15,8 @@ sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generat
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-
-#sed -i '$a src-git src-git helloworld https://github.com/fw876/helloworld ' feeds.conf.default
+ 
+sed -i '$a src-git src-git helloworld https://github.com/fw876/helloworld ' feeds.conf.default
 
 # Add luci-theme-opentomcat
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git theme-temp/luci-theme-opentomcat
