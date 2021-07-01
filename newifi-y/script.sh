@@ -16,7 +16,7 @@ sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generat
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
  
-sed -i '$a src-git src-git helloworld https://github.com/fw876/helloworld ' feeds.conf.default
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld ' feeds.conf.default
 
 # Add luci-theme-opentomcat
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git theme-temp/luci-theme-opentomcat
