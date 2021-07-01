@@ -11,7 +11,7 @@ on:
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: master
+  REPO_BRANCH: main
   FEEDS_CONF: newifi-y/feeds.conf.default
   CONFIG_FILE: newifi-y/.config
   DIY_P1_SH: newifi-y/script.sh
