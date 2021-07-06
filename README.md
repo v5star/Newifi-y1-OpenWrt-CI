@@ -2,7 +2,7 @@
 
 Build OpenWrt using GitHub Actions
 
-经测试编译成功。
+经测试编译成功。科学插件编译不进去，国内使用没问题。
 去掉上传到奶牛等网络空间，直接把编译文件显示在Actions任务下面。（这个可以上传到Releases下）。
 
 具体修改`/.github/workflows/build-openwrt-newifi-y1.yml`
